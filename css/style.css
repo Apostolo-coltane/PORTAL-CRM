@@ -1,0 +1,22 @@
+:root { --wine:#8f1720; --navy:#10264d; --gold:#d6aa2a; --ink:#20304a; --paper:#fff; --sand:#f6f3ed; --line:#e4dfd5; }
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0; color:var(--ink); background:var(--sand); font:16px/1.65 Arial,sans-serif; }
+h1,h2,h3,p { margin-top:0; } h1,h2,h3 { line-height:1.15; } h2 { color:var(--navy); font-size:clamp(1.8rem,4vw,2.5rem); } h3 { color:var(--navy); font-size:1.2rem; }
+a:focus-visible,button:focus-visible { outline:3px solid var(--gold); outline-offset:3px; }
+.skip-link { position:absolute; left:-999px; z-index:10; padding:.5rem 1rem; background:#fff; color:var(--navy); } .skip-link:focus { left:1rem; top:1rem; }
+.site-header { position:sticky; top:0; z-index:5; display:flex; align-items:center; justify-content:space-between; gap:1.5rem; padding:.8rem max(5vw,1.25rem); background:var(--wine); color:#fff; box-shadow:0 2px 10px #0003; }
+.brand { display:flex; align-items:center; gap:.7rem; color:inherit; font-weight:700; text-decoration:none; white-space:nowrap; } .brand img { width:45px; height:45px; object-fit:contain; }
+.nav ul { display:flex; gap:1.15rem; margin:0; padding:0; list-style:none; } .nav a { color:#fff; font-size:.9rem; font-weight:700; text-decoration:none; } .nav a:hover { color:#ffe28b; }
+.menu-toggle { display:none; color:#fff; background:transparent; border:1px solid #fff; border-radius:.3rem; font-size:1.25rem; }
+main { max-width:1180px; margin:auto; padding:1.25rem; }
+.hero { padding:clamp(4rem,11vw,8rem) clamp(1.5rem,7vw,6rem); text-align:center; color:#fff; background:linear-gradient(125deg,#73131a,#10264d); border-radius:1rem; } .hero h1 { max-width:800px; margin:.5rem auto 1rem; font-size:clamp(2.35rem,6vw,4.3rem); } .hero p:not(.eyebrow) { max-width:700px; margin:0 auto 1.5rem; font-size:1.1rem; }
+.eyebrow { margin-bottom:.5rem; color:var(--gold); font-size:.78rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase; }
+.section { margin-top:1.25rem; padding:clamp(2rem,6vw,4.5rem); background:var(--paper); border-radius:1rem; } .section-intro { max-width:700px; }
+.two-columns { display:grid; grid-template-columns:1fr 1fr; gap:2rem; } .two-columns p { margin:0; }
+.card-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; margin-top:1.8rem; } .card { display:flex; flex-direction:column; padding:1.35rem; border:1px solid var(--line); border-radius:.7rem; background:#fff; } .card p { flex:1; } .tag,.status { width:max-content; padding:.2rem .55rem; border-radius:99px; font-size:.72rem; font-weight:700; } .tag { color:var(--wine); background:#f8e8e9; } .status { color:#665512; background:#fff4c8; }.text-link { color:var(--wine); font-weight:700; text-decoration:none; }
+.section-tint { background:#f0f3f8; }.feature { display:grid; grid-template-columns:180px 1fr; align-items:center; gap:2rem; max-width:800px; }.feature img { width:100%; border-radius:.5rem; }.button { display:inline-block; padding:.75rem 1rem; border-radius:.4rem; color:#fff; background:var(--wine); font-weight:700; text-decoration:none; }.button:hover { background:#681117; }.button-secondary { background:var(--navy); }
+.section-dark { color:#fff; background:var(--navy); }.section-dark h2 { color:#fff; }.contact { text-align:center; }.contact p { margin-bottom:0; }.site-footer { display:flex; flex-direction:column; align-items:center; padding:2.5rem 1.25rem; color:#fff; background:#0b1d3b; text-align:center; }.site-footer p { margin:.2rem 0; }.site-footer .brand img { width:55px; height:55px; }
+.content-section { max-width:800px; margin:1.25rem auto; padding:clamp(2rem,6vw,4.5rem); background:var(--paper); border-radius:1rem; text-align:center; }.logo-tv { max-width:220px; height:auto; }
+@media (max-width:850px) { .menu-toggle{display:block;padding:.25rem .55rem}.site-header{flex-wrap:wrap}.nav{display:none;width:100%}.nav.active{display:block}.nav ul{flex-direction:column;gap:.8rem;padding-top:.5rem}.card-grid{grid-template-columns:1fr 1fr} }
+@media (max-width:560px) { main{padding:.75rem}.hero,.section{border-radius:.65rem}.two-columns,.feature,.card-grid,.card-grid.three{grid-template-columns:1fr}.feature img{max-width:180px}.site-header{gap:.75rem} }

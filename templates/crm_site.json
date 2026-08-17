@@ -1,0 +1,11 @@
+{
+  "site": {
+    "name": "Cristo Reina MOMSOE",
+    "header": { "logo": "../assets/Logo_CRM.png", "menu": [{ "label": "Início", "link": "#home" }, { "label": "Quem somos", "link": "#quem-somos" }, { "label": "TV Cristo Reina", "link": "tv.html" }] },
+    "pages": {
+      "home": { "title": "Cristo Reina MOMSOE", "subtitle": "Uma obra que honra o passado e edifica o futuro.", "cta": { "text": "Conheça nossa história", "link": "#quem-somos" } },
+      "quemSomos": { "title": "Quem somos", "sections": [{ "heading": "Origem e fundação", "content": "O Ministério Apostólico Cristo Reina MOMSOE é uma história viva, construída com fé, coragem e compromisso com o Reino de Deus." }, { "heading": "Liderança e continuidade", "content": "A obra é sustentada por líderes que servem e constroem pontes entre o céu e a terra, honrando seus fundamentos." }, { "heading": "Frentes de desenvolvimento", "items": ["Digital: presença online e comunicação estratégica.", "Material: apoio a comunidades e ministérios parceiros.", "Espiritual: formação, evangelismo, intercessão e discipulado."] }, { "heading": "Missão e propósito", "content": "Seguimos em unidade, com gratidão pelo passado, paixão pelo presente e fé no futuro." }] },
+      "footer": { "text": "Porque Cristo reina, e o MOMSOE é prova viva disso.", "socialLinks": [{ "label": "Facebook", "url": "https://facebook.com/crmomsoe" }, { "label": "Instagram", "url": "https://instagram.com/crmomsoe" }, { "label": "YouTube", "url": "https://youtube.com/@cristoreinamomsoetv3836" }] }
+    }
+  }
+}
