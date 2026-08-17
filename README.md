@@ -15,7 +15,7 @@ o **Conecta News — Agenda Virtual Inteligente** e os demais projetos e iniciat
 * Integrar recursos de inteligência artificial;
 * Estabelecer uma base tecnológica para futuros aplicativos e serviços digitais.
 
-## Arquitetura
+## Arquitetura 
 
 O Portal CRM foi concebido com uma arquitetura modular, permitindo que novos recursos sejam incorporados progressivamente sem comprometer a estrutura existente.
 
